@@ -2,16 +2,19 @@
   <div id="app">
     <my-header></my-header>
     <router-view></router-view>
+    <my-menu></my-menu>
   </div>
 </template>
 
 <script>
-import header from "./components/header"
+import header from "./components/header";
+import menu from "./components/menu";
 
 export default {
   name: 'app',
   components:{
-    "my-header":header
+    "my-header":header,
+    "my-menu":menu
   }
 }
 </script>
